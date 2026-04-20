@@ -1,0 +1,174 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url(./pixelcut-export.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+
+.navbar {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px 20px;
+  color: white;
+  
+}
+
+.nav-left {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 250px;
+  height: 15px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid gray;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  height: 37px;
+  font-size: 14px;
+  background-color: rgb(76, 175, 80);
+  color: white;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: rgb(76, 175, 80);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.nav-right button {
+  background-color: white;
+  border-color: black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.nav-right a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+
+#content-head {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#content {
+  padding: 30px;
+  border: 3px solid grey;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 90%;
+  margin: 20px auto 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="mail"] {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 16px;
+  background-color:white;
+  color: black;
+}
+
+input[type="password"]
+{
+padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid  gray;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(52, 152, 219);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(52, 152, 219);
+}
+
+
+.error-text {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.footer {
+  height: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}

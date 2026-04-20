@@ -1,0 +1,204 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: url(./pixelcut-export.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  color: black;
+}
+
+.search-bar button {
+  padding: 10px 14px;
+  font-size: 14px;
+  background-color: rgb(76, 175, 80);
+  color: white;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: rgb(69, 160, 73);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right button {
+  background-color: beige;
+  border-color:black;
+  border-radius: 20px;
+}
+
+.nav-right a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.profile-pic {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.profile-pic:hover + .profile-tooltip {
+  opacity: 1;
+}
+
+.profile-tooltip {
+  opacity: 0;
+  width: 300px;
+  background-color:gray;
+  color:white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  transition: opacity 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 10px black;
+}
+
+#content-head {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: rgb(79, 79, 236);
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#content {
+  padding: 30px;
+  border: 5px solid grey;
+  border-radius: 15px;
+  width: 600px; 
+  max-width: 100%;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: whitesmoke;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 3px;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-left">My Library</div>
+    <div class="nav-center">
+      <div class="search-bar">
+        <input type="text" placeholder="Search books...">
+        <button>Search</button>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="">About this Library</a>
+      <button>Sign In</button>
+      <form action="../Register/Register.html"><button>Register</button></form>
+    </div>
+  </div>
+
+ 
+  <div id="content-head">
+    <h1>Login Page</h1>
+  </div>
+
+  <div id="content">
+    <form onsubmit="checkLogin(event)">
+      <label for="username">Enter Your Mail</label>
+      <input type="mail" id="username" required>
+
+      <label for="password">Enter Password</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Login</button>
+      <p id="error" class="error-text"></p>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>Librarian:Jikaansh ✅ </p>
+    <p>Contact: 1234567809 📞</p>
+    <p>❌ © copyrights Reserved ⚠️</p>
+    <p>Email: librarian@gmail.com 📫</p>
+    <p>Address: JSpiders Hebbal ✌️</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

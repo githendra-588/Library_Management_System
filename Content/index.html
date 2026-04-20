@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="nav-left"> <i class="fa-solid fa-bars"></i> Home</div>
+
+    
+    <div class="nav-center">
+      <div class="search-bar">
+        <input type="text" placeholder="Search About Books">
+        <button>Search</button>
+      </div>
+    </div>
+    <div class="nav-right">
+  <a href="">About this Library</a>
+  <div class="profile-tooltip">
+      <strong>This library Contains</strong><br>
+      Books:1090<br>
+      Journals:800<br>
+      Magzines:500 <br>
+      Total :<strong>2390</strong>
+    </div>
+   <form action="../Sign_in/Sigin.html"><button type="submit">Sign Out</button></form>
+
+  <div class="profile-container">
+    <img src="./developer.jpg" alt="Profile" class="profile-pic">
+    <div class="profile-tooltip">
+      <strong>Jithendra</strong><br>
+      cell: 63XXXX617<br>
+      MailTo: muleXXXXXXXXreddy@gmail.com<br>
+      Languages used:HTML,CSS,JS <br>
+      Tools used:VScode
+    </div>
+  </div>
+</div>
+
+  </nav>
+  <h1>Library Management System</h1>
+  <div id="menu">
+    <button onclick="showAddBook()">Add Book</button>
+    <button onclick="showViewBooks()">View Books</button>
+    <button onclick="showBorrowBook()">Borrow Book</button>
+    <button onclick="showReturnBook()">Return Book</button>
+  </div>
+
+  
+  <div id="content">
+    <h1 id="content-head">Welcome To Library <br>
+    Where you gain KNOWLEDGE</h1>
+  </div>
+
+ 
+  <footer class="footer">
+    <div class="footer-item">Developer: Jithendra</div>
+    <div class="footer-item">Contact No: 6XXXXXXX4617</div>
+    <div class="footer-item">Email: muleXXXXXXXreddy@gmail.com</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
